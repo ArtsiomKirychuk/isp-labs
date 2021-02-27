@@ -1,5 +1,3 @@
-import os
-
 def fibonacci(num):
 	if num < 0:
 		print("Incorrect input")
@@ -20,7 +18,7 @@ def factorial(num):
 		return num * factorial(num-1)
 
 def main():
-	num = int(os.environ['NUM'])
+	num = int(input('Enter the number'))
 	print(f"{num}! = {factorial(num)}")
 	print(f"n-th Fibonacci number is {fibonacci(num)}")
 
