@@ -7,6 +7,6 @@ urlpatterns = [
 
     path('', views.home),
     path('products/', views.products),
-    path('customer/', views.customer),
+    path('customer/<str:primary_key>/', views.customer),
 
 ]
