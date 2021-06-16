@@ -5,8 +5,10 @@ from django.urls import path, include
 
 urlpatterns = [
 
-    path('', views.home),
-    path('products/', views.products),
-    path('customer/<str:primary_key>/', views.customer),
-
+    path('', views.home, name="home"),
+    path('products/', views.products, name="products"),
+    path('customer/<str:primary_key>/', views.customer, name="customer"),
+    path('create_order', views.createOrder, name='create_order'),
+    path('update_order/<str:primary_key>/', views.updateOrder, name='update_order'),
+    path('delete_order/<str:primary_key>/', views.delete_order, name='delete_order')
 ]
