@@ -5,14 +5,12 @@
 {%  include 'accounts/status.html' %}
 
 <br>
-
-<div class="row">
-	<div class="col-md-5">
+	<div class="col-md-12">
 		<h5>CUSTOMERS:</h5>
 		<hr>
 		<div class="card card-body">
 			<a class="btn btn-primary  btn-sm btn-block" href="">Create Customer</a>
-			<table class="table table-sm">
+			<table class="table table-dark">
 				<tr>
 					<th></th>
 					<th>Customer</th>
@@ -29,12 +27,11 @@
 		</div>
 	</div>
 
-	<div class="col-md-7">
+	<div class="col-md-12">
 		<h5>LAST 5 ORDERS</h5>
 		<hr>
 		<div class="card card-body">
-			<a class="btn btn-primary  btn-sm btn-block" href="{% url 'create_order' %}">Create Order</a>
-			<table class="table table-sm">
+			<table class="table table-dark">
 				<tr>
 					<th>Product</th>
 					<th>Date Ordered</th>
